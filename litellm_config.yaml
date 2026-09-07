@@ -1,0 +1,20 @@
+model_list:
+  - model_name: gemini-flash-latest
+    litellm_params:
+      model: gemini/gemini-flash-latest
+      api_key: os.environ/GEMINI_API_KEY
+      temperature: 0
+      max_tokens: 500
+
+general_settings:
+  # Set timeout (30 seconds)
+  request_timeout: 30
+
+  # Enable streaming support
+  stream_response: true
+# Optional: Add fallback to GPT-4o if Gemini fails
+# Uncomment to enable fallback:
+#   - model_name: gemini-3-flash
+#     litellm_params:
+#       model: gpt-4o
+#       api_key: os.environ/OPENAI_API_KEY

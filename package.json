@@ -1,0 +1,38 @@
+{
+  "name": "restaurant-phone-agent",
+  "version": "1.0.0",
+  "description": "Twilio Vapi phone agent for restaurant orders with Meshulam payments",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "validate:menu": "node scripts/validateKnowledgeBase.js"
+  },
+  "keywords": [
+    "twilio",
+    "vapi",
+    "restaurant",
+    "phone-agent",
+    "meshulam"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vapi-ai/server-sdk": "^0.11.0",
+    "axios": "^1.6.0",
+    "connect-timeout": "^1.9.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "langfuse": "^3.38.6",
+    "mongodb": "^6.3.0",
+    "mongoose": "^9.0.0",
+    "openai": "^6.10.0",
+    "twilio": "^4.19.0",
+    "uuid": "^9.0.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
